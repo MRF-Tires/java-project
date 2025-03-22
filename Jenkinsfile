@@ -4,9 +4,9 @@ node{
     git credentialsId: 'e212933d-3aba-4962-997f-befd5dad7898', url: 'https://github.com/MRF-Tires/java-project.git'
   }
   stage('compile'){
-  sh 'mvn compile'
+  sh '${mavenHome}/bin/mvn compile'
   }
   stage('Build'){
-  sh 'mvn clean package'
+  sh '${mavenHome}/bin/mvn clean package'
   }
 }//node close
