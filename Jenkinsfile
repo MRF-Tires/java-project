@@ -10,6 +10,6 @@ node{
   sh "${mavenHome}/bin/mvn clean package"
   }
   stage('after-tsting'){
-    build job: "IQOO-pipeline-UAT"
+    build job: "IQOO-pipeline-testing"
   }
 }//node close
