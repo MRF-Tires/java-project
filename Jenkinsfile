@@ -9,4 +9,7 @@ node{
   stage('Build'){
   sh "${mavenHome}/bin/mvn clean package"
   }
+  stage('after-Dev'){
+    buildjob: "IQOO-pipeline-Dev"
+  }
 }//node close
