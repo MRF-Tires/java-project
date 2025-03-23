@@ -5,6 +5,7 @@ node{
   }
   stage('compile'){
   sh "${mavenHome}/bin/mvn compile"
+    
   }
   stage('Build'){
   sh "${mavenHome}/bin/mvn clean package"
