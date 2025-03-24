@@ -1,29 +1,63 @@
-import React from "react";
-
-const Dashboard = () => {
-  return (
-    <div className="h-screen flex bg-cover bg-center" style={{ backgroundImage: "url('https://source.unsplash.com/random/1600x900')" }}>
-      {/* Sidebar */}
-      <div className="w-64 bg-gradient-to-b from-purple-600 to-blue-500 text-white p-5 space-y-6 shadow-lg">
-        <h1 className="text-3xl font-extrabold">Dashboard</h1>
-        <nav>
-          <ul className="space-y-4">
-            <li className="hover:bg-blue-700 p-3 rounded-lg cursor-pointer transition">🏠 Home</li>
-            <li className="hover:bg-blue-700 p-3 rounded-lg cursor-pointer transition">👤 Profile</li>
-            <li className="hover:bg-blue-700 p-3 rounded-lg cursor-pointer transition">⚙️ Settings</li>
-            <li className="hover:bg-red-600 p-3 rounded-lg cursor-pointer transition">🚪 Logout</li>
-          </ul>
-        </nav>
-      </div>
-      
-      {/* Main Content */}
-      <div className="flex-1 flex items-center justify-center text-white">
-        <h2 className="text-5xl font-extrabold bg-gradient-to-r from-pink-500 to-yellow-500 bg-clip-text text-transparent animate-pulse">
-          Welcome to Your Colorful Dashboard
-        </h2>
-      </div>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0') no-repeat center center/cover;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+        .navbar {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 15px;
+            text-align: center;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .navbar a:hover {
+            color: yellow;
+        }
+        .container {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
     </div>
-  );
-};
-
-export default Dashboard;
+    <div class="container">
+        <h1>Welcome to the Home Page</h1>
+        <p>Enjoy a colorful and vibrant ocean background with JSP.</p>
+    </div>
+</body>
+</html>
